@@ -1,0 +1,159 @@
+@(message: String)
+
+@main("Welcome to Play") {
+<h1 class="front-title">Post</h1>
+<div class="front-introduction">
+    <p>
+
+    </p>
+</div>
+
+<div class="front-user-space">
+    <div><p>Post</p></div>
+</div>
+
+<div class="main-container">
+    <div class="button-list">
+        <div href="#" class="button" id="toggle-login">Tree</div>
+    </div>
+
+    <div id="jstree">
+        <!-- in this example the tree is populated from inline HTML -->
+        <ul>
+            <li>
+                <div>
+                    <h2>Wedding Presnet</h2>
+                    <p>Hello, I am a burly man and I want to buy a cock ring for my future husband.</p>
+                    <span>
+                        <a href="#">Elaborate</a>
+                        <a href="#">Edit</a>
+                        <a href="#">Delete</a>
+                    </span>
+                </div>
+                <ul>
+                    <li id="child_node_1">
+                        <div>
+                            <h4>get some wood</h4>
+                            <span>
+                                <a href="#">Elaborate</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </span>
+                        </div>
+                        <ul>
+                            <li id="child_node_1_1">
+                                <div>
+                                    <h4>cherry tree wood</h4>
+                                    <span>
+                                        <a href="#">Elaborate</a>
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li id="child_node_1_2">
+                                <div>
+                                    <h4>you are gay</h4>
+                                    <span>
+                                        <a href="#">Elaborate</a>
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>Child node 2</h4>
+                            <span>
+                                <a href="#">Elaborate</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </span>
+                        </div>
+                        <ul>
+                            <li id="child_node_2_1">
+                                <div>
+                                    <h4>circucision</h4>
+                                    <span>
+                                        <a href="#">Elaborate</a>
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li id="child_node_2_1_2">
+                                        <div>
+                                            <h4>terrorist scum</h4>
+                                            <span>
+                                                <a href="#">Elaborate</a>
+                                                <a href="#">Edit</a>
+                                                <a href="#">Delete</a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div>
+                    <h2>I am sad</h2>
+                    <p>Hello, my neighbor moved and now I have to sit with my wife all day.</p>
+                    <span>
+                        <a href="#">Elaborate</a>
+                        <a href="#">Edit</a>
+                        <a href="#">Delete</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <h4>Kill yourself.</h4>
+                            <span>
+                                <a href="#">Elaborate</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <button>demo button</button>
+</div>
+
+<script>
+  $(function () {
+    // 6 create an instance when the DOM is ready
+    $('#jstree').jstree(
+    {
+    "types" : {
+      "default" : {
+        "icon" : "glyphicon glyphicon-flash"
+      },
+      "demo" : {
+        "icon" : "glyphicon glyphicon-ok"
+      }
+    },
+
+        "plugins" : [ "types", "wholerow", "state" ]
+    });
+
+    // 7 bind to events triggered on the tree
+    $('#jstree').on("changed.jstree", function (e, data) {
+      console.log(data.selected);
+    });
+    // 8 interact with the tree - either way is OK
+    $('button').on('click', function () {
+      $('#jstree').jstree('select_node', 'child_node_1');
+    });
+  });
+
+  </script>
+}
