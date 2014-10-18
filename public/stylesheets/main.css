@@ -1,0 +1,35 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+h1.front-title {
+    margin-top: 180px;
+    margin-bottom: 32px;
+    font-size: 120px;
+    text-align: center;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    text-align: center;
+}
+
+div.front-user-space {
+    margin-top: 72px;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+}
