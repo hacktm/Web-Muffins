@@ -13,22 +13,27 @@
 </div>
 
 <div class="main-container">
-    <div class="button-list">
-        <div href="#" class="button" id="toggle-login">Tree</div>
-    </div>
-
-    <div id="jstree">
+    <div id="jstree" class="jstree-idea">
         <!-- in this example the tree is populated from inline HTML -->
-        <ul>
-            <li>
-                <div>
-                    <h2>Wedding Presnet</h2>
-                    <p>Hello, I am a burly man and I want to buy a cock ring for my future husband.</p>
-                    <span>
-                        <a href="#">Elaborate</a>
+        <ul class="idea-root">
+            <li class="idea-element">
+                <div class="idea-element-body">
+                    <h2 class="idea-element-body-title">Wedding Present</h2>
+                    <div class="idea-element-details">
+                        <a href="#">18.10.2014</a>
+                        <a href="#">Bucium Herodot</a>
+                        <a href="#">123</a> <!-- Popularity -->
+                        <a href="#">Moarte Lenta</a> <!-- Category -->
+                    </div>
+                    <div class="idea-element-description">
+                        <p>Hello, I am a burly man and I want to buy a cock ring for my future husband.</p>
+                        <textarea></textarea>
+                    </div>
+                    <div class="idea-element-control">
+                        <a id="idea-elaborate-1" href="#">Elaborate</a>
                         <a href="#">Edit</a>
                         <a href="#">Delete</a>
-                    </span>
+                    </div>
                 </div>
                 <ul>
                     <li id="child_node_1">
@@ -133,7 +138,7 @@
     // 6 create an instance when the DOM is ready
     $('#jstree').jstree(
     {
-    "types" : {
+/*    "types" : {
       "default" : {
         "icon" : "glyphicon glyphicon-flash"
       },
@@ -141,7 +146,7 @@
         "icon" : "glyphicon glyphicon-ok"
       }
     },
-
+*/
         "plugins" : [ "types", "wholerow", "state" ]
     });
 

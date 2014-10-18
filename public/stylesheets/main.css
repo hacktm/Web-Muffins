@@ -8,9 +8,10 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-p {
+h2, h3, h4, h5, h6, p, a {
     font-family: 'Lato', sans-serif;
 }
+
 
 a:link {
     color: #000000;
@@ -56,17 +57,3 @@ input {
     height: 76px;
 }
 
-/* post page */
-
-#jstree h2, #jstree h4, #jstree p, #jstree a{
-/*    display: inline;*/
-    margin: 0 0 0 8px;
-}
-
-#jstree h4{
-    font-weight:normal;
-}
-
-#jstree div{
-    display: inline-block;
-}
