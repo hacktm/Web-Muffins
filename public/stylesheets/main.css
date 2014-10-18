@@ -1,3 +1,9 @@
+body {
+    background-image: url(/assets/images/front-background.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
 }
@@ -29,7 +35,23 @@ div {
 }
 
 div.front-user-space {
-    margin-top: 72px;
+    margin-top: 24px;
     font-family: 'Playfair Display', serif;
     font-size: 26px;
+}
+
+input {
+    width: 194px;
+    height: 18px;
+    font-size: 14px;
+    margin: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+#front-newest-requests {
+    height: 132px;
+}
+
+#front-footer {
+    height: 76px;
 }
