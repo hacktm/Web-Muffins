@@ -1,0 +1,61 @@
+.jstree-idea {
+    display: inline-block;
+    /*width: 75%;*/
+}
+
+.jstree-idea div {
+    width: 100%;
+}
+
+/*.idea-root
+.idea-element*/
+
+.idea-element-body {
+    padding: 0 8px;
+    display: inline-block;
+
+    border-color: #DDD;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.idea-element-body h2 {
+    color: #333;
+    display: inline;
+}
+.idea-element-body h4 {
+    color: #666;
+    font-weight:normal;
+    display: inline;
+}
+/*
+.idea-element-details
+*/
+.idea-element-details a,
+.idea-element-control a {
+    text-decoration: none;
+    color: #999;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.idea-element-details a:first-child,
+.idea-element-control a:first-child {
+    margin-left: 0;
+}
+
+.idea-element-details a:hover,
+.idea-element-control a:hover {
+    text-decoration: underline;
+}
+
+.idea-element-description {
+    color: #505050;
+}
+
+/*
+.idea-element-description p
+
+.idea-element-control
+.idea-element-control a
+*/

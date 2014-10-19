@@ -29,7 +29,7 @@
                         <p id="idea-paragraph-1">Hello, I am a burly man and I want to buy a cock ring for my future husband.</p>
                     </div>
                     <div class="idea-element-control">
-                        <a id="idea-elaborate-1" href="#">Elaborate</a>
+                        <span id="idea-elaborate-1" href="#">Elaborate</span>
                         <a href="#">Edit</a>
                         <a href="#">Delete</a>
                     </div>
@@ -132,16 +132,16 @@
     <button>demo button</button>
 </div>
 
-<script>
+<!--<script>
     $(function () {
         /*
             $('#idea-elaborate-1').on('click', function () {
-            var paragraph = $('#idea-paragraph-1');
-            var width = paragraph.css('width');
-            var text = paragraph.text();
-            paragraph.replaceWith("<textarea id='idea-textarea-1'>" + text + "</textarea>");
-            $('#idea-textarea-1').css("width", width);
-        });
+                var paragraph = $('#idea-paragraph-1');
+                var width = paragraph.css('width');
+                var text = paragraph.text();
+                paragraph.replaceWith("<textarea id='idea-textarea-1'>" + text + "</textarea>");
+                $('#idea-textarea-1').css("width", width);
+            });
         */
         /*
         // 6 create an instance when the DOM is ready
@@ -168,6 +168,45 @@
             $('#jstree').jstree('select_node', 'child_node_1');
         });
     });
+
+  </script>-->
+
+<script>
+  $(function () {
+
+      $('#idea-elaborate-1').on('click', function () {
+          alert('Batman!');/*
+          var paragraph = $('#idea-paragraph-1');
+          var width = paragraph.css('width');
+          var text = paragraph.text();
+          paragraph.replaceWith("<textarea id='idea-textarea-1'>" + text + "</textarea>");
+          $('#idea-textarea-1').css("width", width);*/
+      });
+
+    // 6 create an instance when the DOM is ready
+    $('#jstree').jstree(
+    {
+/*    "types" : {
+      "default" : {
+        "icon" : "glyphicon glyphicon-flash"
+      },
+      "demo" : {
+        "icon" : "glyphicon glyphicon-ok"
+      }
+    },
+*/
+        "plugins" : [ "types", "wholerow", "state" ]
+    });
+
+    // 7 bind to events triggered on the tree
+    $('#jstree').on("changed.jstree", function (e, data) {
+      console.log(data.selected);
+    });
+    // 8 interact with the tree - either way is OK
+    $('button').on('click', function () {
+      $('#jstree').jstree('select_node', 'child_node_1');
+    });
+  });
 
   </script>
 }
