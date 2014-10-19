@@ -6,10 +6,10 @@ import play.api.mvc._
 object Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index("Mindference."))
   }
 
   def post = Action {
-    Ok(views.html.post("Your new casdoi is ready."))
+    Ok(views.html.post("Mindference."))
   }
 }

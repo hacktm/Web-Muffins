@@ -1,7 +1,8 @@
 body {
-    background-image: url(/assets/images/front-background.svg);
+/*    background-image: url(/assets/images/front-background.svg);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom;*/
+    background:url(/assets/images/front-background.svg) fixed no-repeat bottom right;
     padding:0px;
     margin:0px;
 }
@@ -22,6 +23,7 @@ h2, h3, h4, h5, h6, p, a {
 
 a:link {
     color: #000000;
+    text-decoration: none;
 }
 
 a:visited {
@@ -29,10 +31,18 @@ a:visited {
 }
 
 h1.front-title {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 32px;
     font-size: 120px;
     text-align: center;
+}
+
+h1.front-title-logo {
+    font-size: 50px;
+    text-align: center;
+    text-color: #ffffff;
+    margin-top: 16px;
+    padding-left:20px;
 }
 
 div.div-main {
@@ -50,10 +60,11 @@ div.front-user-space {
 
 input {
     width: 194px;
-    height: 18px;
+   /* height: 18px; */
     font-size: 14px;
     margin: 3px;
     font-family: 'Lato', sans-serif;
+    padding: 8px;
 }
 
 #front-newest-requests {

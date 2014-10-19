@@ -1,147 +1,282 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Mindference") {
 
 <!-- -->
 <div class="menu-bar">
     <ul class="menuTemplate3 decor3_1" license="mylicense">
-        <li><a href="#">Log Out</a></li>
-        <li class="separator"></li>
-        <li><a href="#" class="arrow">Horizontal Menus</a>
-        <li class="separator"></li>
-        <li><a href="#">Horizontal Menu CSS</a></li>
-        <li class="separator"></li>
-        <li><a href="#" class="arrow">Horizontal Web Menu</a>
-        <li class="separator"></li>
+        <li id="logo"><a href="/post"><h1 class="front-title-logo">Mindference</h1></a></li>
+        <li><a href="/">Log Out</a></li>
+        <li><a href="#">My Profile</a>
+        <li><a href="/post">Home</a></li>
     </ul>
 </div>
 <!-- -->
-
-<div class="main-container">
-    <div id="jstree" class="jstree-idea">
-        <!-- in this example the tree is populated from inline HTML -->
-        <ul class="idea-root">
-            <li class="idea-element">
-                <div class="idea-element-body">
-                    <h2 class="idea-element-body-title">Wedding Present</h2>
-                    <div class="idea-element-details">
-                        <a href="#">18.10.2014</a>
-                        <a href="#">Bucium Herodot</a>
-                        <a href="#">123</a> <!-- Popularity -->
-                        <a href="#">Moarte Lenta</a> <!-- Category -->
-                    </div>
-                    <div class="idea-element-description">
-                        <p id="idea-paragraph-1">Hello, I am a burly man and I want to buy a cock ring for my future husband.</p>
-                    </div>
-                    <div class="idea-element-control">
-                        <span id="idea-elaborate-1" href="#">Elaborate</span>
-                        <a href="#">Edit</a>
-                        <a href="#">Delete</a>
-                    </div>
-                </div>
-                <ul>
-                    <li class="idea-element">
-                        <div class="idea-element-body">
-                            <h4 class="idea-element-body-title">get some wood</h4>
-                            <div class="idea-element-details">
-                                <a href="#">18.10.2014</a>
-                                <a href="#">Bucium Herodot</a>
-                                <a href="#">123</a> <!-- Popularity -->
-                                <a href="#">Moarte Lenta</a> <!-- Category -->
-                                <div class="idea-element-control">
-                                    <span id="idea-elaborate-2" href="#">Elaborate</span>
-                                    <a href="#">Edit</a>
-                                    <a href="#">Delete</a>
-                                </div>                            </div>
-                        </div>
-                        <ul>
-                            <li id="child_node_1_1">
-                                <div>
-                                    <h4>cherry tree wood</h4>
-                                    <span>
-                                        <a href="#">Elaborate</a>
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </div>
-                            </li>
-                            <li id="child_node_1_2">
-                                <div>
-                                    <h4>you are gay</h4>
-                                    <span>
-                                        <a href="#">Elaborate</a>
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div>
-                            <h4>Child node 2</h4>
-                            <span>
-                                <a href="#">Elaborate</a>
-                                <a href="#">Edit</a>
-                                <a href="#">Delete</a>
-                            </span>
-                        </div>
-                        <ul>
-                            <li id="child_node_2_1">
-                                <div>
-                                    <h4>circucision</h4>
-                                    <span>
-                                        <a href="#">Elaborate</a>
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </div>
-                                <ul>
-                                    <li id="child_node_2_1_2">
-                                        <div>
-                                            <h4>terrorist scum</h4>
-                                            <span>
-                                                <a href="#">Elaborate</a>
-                                                <a href="#">Edit</a>
-                                                <a href="#">Delete</a>
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <div>
-                    <h2>I am sad</h2>
-                    <p>Hello, my neighbor moved and now I have to sit with my wife all day.</p>
-                    <span>
-                        <a href="#">Elaborate</a>
-                        <a href="#">Edit</a>
-                        <a href="#">Delete</a>
-                    </span>
-                </div>
-                <ul>
-                    <li>
-                        <div>
-                            <h4>Kill yourself.</h4>
-                            <span>
-                                <a href="#">Elaborate</a>
-                                <a href="#">Edit</a>
-                                <a href="#">Delete</a>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-            </li>
+<div class="body">
+    <div class="side-bar">
+        <ul class="menuTemplate3-sideBar decor-sideBar" id="menu-v">
+            <li><a href="#" style="border-bottom: 1px solid #ddd;">Top Categories</a></li><br>
+            <li><a href="#">Top Brainiacs</a></li>
         </ul>
     </div>
 
-    <button>demo button</button>
-</div>
 
+    <div class="main-container">
+        <div id="jstree" class="jstree-idea">
+            <!-- in this example the tree is populated from inline HTML -->
+            <ul class="idea-root">
+                <li class="idea-element">
+                    <div class="idea-element-body">
+                        <h2 class="idea-element-body-title">Wedding Anniversary Present</h2>
+                        <div class="idea-element-details">
+                            <a href="#">17.10.2014</a>
+                            <a href="#">Jack Daniels</a>
+                            <a href="#">No. 7</a> <!-- Popularity -->
+                            <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                        </div>
+                        <div class="idea-element-description">
+                            <p id="idea-paragraph-1">Hello, It's been 5 years since me and Cat Woman got married. I was thinking of getting her something. Any Ideas?<br><br>Hint: not a cat.</p>
+                        </div>
+                        <div class="idea-element-control">
+                            <a id="idea-elaborate-1" href="#">Elaborate</a>
+                            <a href="#">Edit</a>
+                            <a href="#">Delete</a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="idea-element">
+                            <div class="idea-element-body">
+                                <h3 class="idea-element-body-title">sexy underware</h3>
+                                <div class="idea-element-details">
+                                    <a href="#">18.10.2014</a>
+                                    <a href="#">Coriolan Buzdugan</a>
+                                    <a href="#">6</a> <!-- Popularity -->
+                                    <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                    <div class="idea-element-control">
+                                        <a id="idea-elaborate-2" href="#">Elaborate</a>
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="idea-element">
+                                    <div class="idea-element-body">
+                                        <h3 class="idea-element-body-title">sent home</h3>
+                                        <div class="idea-element-details">
+                                            <a href="#">19.10.2014</a>
+                                            <a href="#">Ahmred Bin Sabad</a>
+                                            <a href="#">911</a> <!-- Popularity -->
+                                            <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                        </div>
+                                        <div class="idea-element-control">
+                                            <a id="idea-elaborate-3" href="#">Elaborate</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="idea-element">
+                                    <div class="idea-element-body">
+                                        <h3 class="idea-element-body-title">on a stripper</h3>
+                                        <div class="idea-element-details">
+                                            <a href="#">19.10.2014</a>
+                                            <a href="#">Rolling Troller</a>
+                                            <a href="#">69</a> <!-- Popularity -->
+                                            <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                        </div>
+                                        <div class="idea-element-control">
+                                            <a id="idea-elaborate-4" href="#">Elaborate</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="idea-element">
+                            <div class="idea-element-body">
+                                <h3 class="idea-element-body-title">a puppy</h3>
+                                <div class="idea-element-details">
+                                    <a href="#">19.10.2014</a>
+                                    <a href="#">Bucium Herodot</a>
+                                    <a href="#">1</a> <!-- Popularity -->
+                                    <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                </div>
+                                <div class="idea-element-control">
+                                    <a id="idea-elaborate-5" href="#">Elaborate</a>
+                                    <a href="#">Edit</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="idea-element">
+                                    <div class="idea-element-body">
+                                        <h3 class="idea-element-body-title">with a rose</h3>
+                                        <div class="idea-element-details">
+                                            <a href="#">19.10.2014</a>
+                                            <a href="#">Geko Habib</a>
+                                            <a href="#">16</a> <!-- Popularity -->
+                                            <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                        </div>
+                                        <div class="idea-element-control">
+                                            <a id="idea-elaborate-6" href="#">Elaborate</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li class="idea-element">
+                                            <div class="idea-element-body">
+                                                <h3 class="idea-element-body-title">in it's mouth</h3>
+                                                <div class="idea-element-details">
+                                                    <a href="#">20.10.2014</a>
+                                                    <a href="#">John Future</a>
+                                                    <a href="#">42</a> <!-- Popularity -->
+                                                    <a href="#">Present, Wedding, Wife, ...</a> <!-- Category -->
+                                                </div>
+                                                <div class="idea-element-control">
+                                                    <a id="idea-elaborate-7" href="#">Elaborate</a>
+                                                    <a href="#">Edit</a>
+                                                    <a href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="idea-element">
+                    <div class="idea-element-body">
+                        <h2 class="idea-element-body-title">Hackathon Idea</h2>
+                        <div class="idea-element-details">
+                            <a href="#">16.10.2014</a>
+                            <a href="#">Jim Lantern</a>
+                            <a href="#">9001</a> <!-- Popularity -->
+                            <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                        </div>
+                        <p>Hello, I'm going to a hackathon and I really don't have any idea what to do.<br><br>Hint:16 Hours of work tops.</p>
+                        <div class="idea-element-control">
+                            <a id="idea-elaborate-8" href="#">Elaborate</a>
+                            <a href="#">Edit</a>
+                            <a href="#">Delete</a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="idea-element">
+                            <div class="idea-element-body">
+                                <h3 class="idea-element-body-title">Tornado baloon</h3>
+                                <div class="idea-element-details">
+                                    <a href="#">17.10.2014</a>
+                                    <a href="#">Bucium Herodot</a>
+                                    <a href="#">9</a> <!-- Popularity -->
+                                    <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                </div>
+                                <div class="idea-element-control">
+                                    <a id="idea-elaborate-9" href="#">Elaborate</a>
+                                    <a href="#">Edit</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="idea-element">
+                                    <div class="idea-element-body">
+                                        <h3 class="idea-element-body-title">with floating cow</h3>
+                                        <div class="idea-element-details">
+                                            <a href="#">18.10.2014</a>
+                                            <a href="#">Bucium Herodot</a>
+                                            <a href="#">9</a> <!-- Popularity -->
+                                            <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                        </div>
+                                        <div class="idea-element-control">
+                                            <a id="idea-elaborate-10" href="#">Elaborate</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="idea-element">
+                            <div class="idea-element-body">
+                                <h3 class="idea-element-body-title">Inovative useful idea</h3>
+                                <div class="idea-element-details">
+                                    <a href="#">18.10.2014</a>
+                                    <a href="#">Alice Wonder</a>
+                                    <a href="#">9002</a> <!-- Popularity -->
+                                    <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                </div>
+                                <div class="idea-element-control">
+                                    <a id="idea-elaborate-11" href="#">Elaborate</a>
+                                    <a href="#">Edit</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="idea-element">
+                                    <div class="idea-element-body">
+                                        <h3 class="idea-element-body-title">Brainstorming platform</h3>
+                                        <div class="idea-element-details">
+                                            <a href="#">18.10.2014</a>
+                                            <a href="#">Jim Rainor</a>
+                                            <a href="#">123</a> <!-- Popularity -->
+                                            <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                        </div>
+                                        <div class="idea-element-control">
+                                            <a id="idea-elaborate-12" href="#">Elaborate</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li class="idea-element">
+                                            <div class="idea-element-body">
+                                                <h3 class="idea-element-body-title">with blackjacks</h3>
+                                                <div class="idea-element-details">
+                                                    <a href="#">18.10.2014</a>
+                                                    <a href="#">Bender</a>
+                                                    <a href="#">666</a> <!-- Popularity -->
+                                                    <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                                </div>
+                                                <div class="idea-element-control">
+                                                    <a id="idea-elaborate-13" href="#">Elaborate</a>
+                                                    <a href="#">Edit</a>
+                                                    <a href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li class="idea-element">
+                                                    <div class="idea-element-body">
+                                                        <h3 class="idea-element-body-title">and hookers</h3>
+                                                        <div class="idea-element-details">
+                                                            <a href="#">18.10.2014</a>
+                                                            <a href="#">Bender</a>
+                                                            <a href="#">666</a> <!-- Popularity -->
+                                                            <a href="#">Tech, Fun, Hackathon, ...</a> <!-- Category -->
+                                                        </div>
+                                                        <div class="idea-element-control">
+                                                            <a id="idea-elaborate-14" href="#">Elaborate</a>
+                                                            <a href="#">Edit</a>
+                                                            <a href="#">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!--<script>
     $(function () {
         /*

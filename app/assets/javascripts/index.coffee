@@ -10,7 +10,7 @@ login = (e, p) =>
     password: p
   }, (error, authData) =>
     if error == null
-      window.location.href = "/requests"
+      window.location.href = "/post"
     else
       alert error
   )

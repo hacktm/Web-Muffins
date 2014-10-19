@@ -5,6 +5,8 @@
 
 .jstree-idea div {
     width: 100%;
+    margin-bottom: 4px;
+    line-height: 16px;
 }
 
 /*.idea-root
@@ -22,9 +24,10 @@
 .idea-element-body h2 {
     color: #333;
     display: inline;
+    line-height: 24px;
 }
-.idea-element-body h4 {
-    color: #666;
+.idea-element-body h3 {
+    color: #333;
     font-weight:normal;
     display: inline;
 }
@@ -35,7 +38,7 @@
 .idea-element-control a {
     text-decoration: none;
     color: #999;
-    font-size: 13px;
+    font-size: 10px;
     margin-left: 8px;
 }
 
