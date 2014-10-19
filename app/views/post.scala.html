@@ -1,16 +1,21 @@
 @(message: String)
 
 @main("Welcome to Play") {
-<h1 class="front-title">Post</h1>
-<div class="front-introduction">
-    <p>
 
-    </p>
+<!-- -->
+<div class="menu-bar">
+    <ul class="menuTemplate3 decor3_1" license="mylicense">
+        <li><a href="#">Log Out</a></li>
+        <li class="separator"></li>
+        <li><a href="#" class="arrow">Horizontal Menus</a>
+        <li class="separator"></li>
+        <li><a href="#">Horizontal Menu CSS</a></li>
+        <li class="separator"></li>
+        <li><a href="#" class="arrow">Horizontal Web Menu</a>
+        <li class="separator"></li>
+    </ul>
 </div>
-
-<div class="front-user-space">
-    <div><p>Post</p></div>
-</div>
+<!-- -->
 
 <div class="main-container">
     <div id="jstree" class="jstree-idea">
@@ -35,14 +40,19 @@
                     </div>
                 </div>
                 <ul>
-                    <li id="child_node_1">
-                        <div>
-                            <h4>get some wood</h4>
-                            <span>
-                                <a href="#">Elaborate</a>
-                                <a href="#">Edit</a>
-                                <a href="#">Delete</a>
-                            </span>
+                    <li class="idea-element">
+                        <div class="idea-element-body">
+                            <h4 class="idea-element-body-title">get some wood</h4>
+                            <div class="idea-element-details">
+                                <a href="#">18.10.2014</a>
+                                <a href="#">Bucium Herodot</a>
+                                <a href="#">123</a> <!-- Popularity -->
+                                <a href="#">Moarte Lenta</a> <!-- Category -->
+                                <div class="idea-element-control">
+                                    <span id="idea-elaborate-2" href="#">Elaborate</span>
+                                    <a href="#">Edit</a>
+                                    <a href="#">Delete</a>
+                                </div>                            </div>
                         </div>
                         <ul>
                             <li id="child_node_1_1">
