@@ -20,7 +20,7 @@
 <div class="main-container">
     <div id="jstree" class="jstree-idea">
         <!-- in this example the tree is populated from inline HTML -->
-        <ul class="idea-root">
+        <ul id="requests-root" class="idea-root">
             <li class="idea-element">
                 <div class="idea-element-body">
                     <h2 class="idea-element-body-title">Wedding Present</h2>
@@ -181,42 +181,43 @@
 
   </script>-->
 
-<script>
-  $(function () {
+<!--<script>-->
+  <!--$(function () {-->
 
-      $('#idea-elaborate-1').on('click', function () {
-          alert('Batman!');/*
-          var paragraph = $('#idea-paragraph-1');
-          var width = paragraph.css('width');
-          var text = paragraph.text();
-          paragraph.replaceWith("<textarea id='idea-textarea-1'>" + text + "</textarea>");
-          $('#idea-textarea-1').css("width", width);*/
-      });
+      <!--$('#idea-elaborate-1').on('click', function () {-->
+          <!--alert('Batman!');/*-->
+          <!--var paragraph = $('#idea-paragraph-1');-->
+          <!--var width = paragraph.css('width');-->
+          <!--var text = paragraph.text();-->
+          <!--paragraph.replaceWith("<textarea id='idea-textarea-1'>" + text + "</textarea>");-->
+          <!--$('#idea-textarea-1').css("width", width);*/-->
+      <!--});-->
 
-    // 6 create an instance when the DOM is ready
-    $('#jstree').jstree(
-    {
-/*    "types" : {
-      "default" : {
-        "icon" : "glyphicon glyphicon-flash"
-      },
-      "demo" : {
-        "icon" : "glyphicon glyphicon-ok"
-      }
-    },
-*/
-        "plugins" : [ "types", "wholerow", "state" ]
-    });
+    <!--// 6 create an instance when the DOM is ready-->
+    <!--$('#jstree').jstree(-->
+    <!--{-->
+<!--/*    "types" : {-->
+      <!--"default" : {-->
+        <!--"icon" : "glyphicon glyphicon-flash"-->
+      <!--},-->
+      <!--"demo" : {-->
+        <!--"icon" : "glyphicon glyphicon-ok"-->
+      <!--}-->
+    <!--},-->
+<!--*/-->
+        <!--"plugins" : [ "types", "wholerow", "state" ]-->
+    <!--});-->
 
-    // 7 bind to events triggered on the tree
-    $('#jstree').on("changed.jstree", function (e, data) {
-      console.log(data.selected);
-    });
-    // 8 interact with the tree - either way is OK
-    $('button').on('click', function () {
-      $('#jstree').jstree('select_node', 'child_node_1');
-    });
-  });
+    <!--// 7 bind to events triggered on the tree-->
+    <!--$('#jstree').on("changed.jstree", function (e, data) {-->
+      <!--console.log(data.selected);-->
+    <!--});-->
+    <!--// 8 interact with the tree - either way is OK-->
+    <!--$('button').on('click', function () {-->
+      <!--$('#jstree').jstree('select_node', 'child_node_1');-->
+    <!--});-->
+  <!--});-->
 
-  </script>
+  <!--</script>-->
+<script src="@routes.Assets.at("javascripts/requests.js")" type="text/javascript"></script>
 }
